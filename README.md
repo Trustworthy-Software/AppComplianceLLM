@@ -21,7 +21,8 @@ To run LLMs locally, we use **OLLAMA** ([GitHub Repository](https://github.com/o
 
 1. **Set up the OLLAMA server** and install `llama3.1` by following the instructions on their GitHub page.
 2. **Configure the connection** by specifying details in a `.env` file as follows:
-    ```
+
+    ```bash
     OLLAMA_SERVER = [SERVER]
     ```
 
