@@ -1,0 +1,6 @@
+ollama
+python-dotenv
+pandas
+requests
+shutil
+xml
