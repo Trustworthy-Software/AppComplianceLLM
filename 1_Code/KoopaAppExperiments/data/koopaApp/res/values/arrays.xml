@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intensity_options">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="sex_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="subject_options">
+        <item>General Information</item>
+        <item>Request to Access Data</item>
+        <item>Other</item>
+    </string-array>
+</resources>

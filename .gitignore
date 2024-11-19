@@ -1,0 +1,8 @@
+__pycache__
+
+TMP
+*.env
+*.pyc
+*.vscode
+
+apktoolOutput

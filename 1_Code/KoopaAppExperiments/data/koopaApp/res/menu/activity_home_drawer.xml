@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@android:drawable/ic_menu_preferences" android:id="@id/nav_my_account" android:title="My Account" />
+        <item android:icon="@android:drawable/ic_input_add" android:id="@id/nav_training" android:title="Add Training" />
+        <item android:icon="@android:drawable/ic_dialog_email" android:id="@id/nav_request_data_1" android:title="Request Data 1" />
+        <item android:icon="@android:drawable/ic_dialog_email" android:id="@id/nav_request_data_2" android:title="Request Data 2" />
+        <item android:icon="@android:drawable/ic_dialog_email" android:id="@id/nav_request_data_3" android:title="Request Data 3" />
+        <item android:icon="@android:drawable/ic_menu_revert" android:id="@id/nav_log_out" android:title="Log Out" />
+    </group>
+</menu>
