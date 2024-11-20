@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the background shape -->
+    <item>
+        <shape>
+            <solid android:color="@color/primaryColor" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Define the text appearance -->
+    <item android:drawable="@drawable/primary_button"> <!-- Use your shape drawable here -->
+        <bitmap android:text="Add" android:textColor="#FFFFFF" android:textSize="16sp" />
+    </item>
+</layer-list>

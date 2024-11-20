@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegistrationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contactCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact us"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- TextView for the subject label -->
+            <TextView
+                android:id="@+id/textViewSubjectLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/spinnerSubject"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeader"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Spinner for selecting subject -->
+            <Spinner
+                android:id="@+id/spinnerSubject"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@id/textViewSubjectLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeader"
+                android:entries="@array/subject_options" />
+
+            <!-- TextView for "Your Message:" -->
+            <TextView
+                android:id="@+id/textViewYourMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Your Message:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewSubjectLabel"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Big free text form -->
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Your message"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="start|top"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewYourMessage"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!-- Submit Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubmit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+
+        android:background="@drawable/primary_button"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

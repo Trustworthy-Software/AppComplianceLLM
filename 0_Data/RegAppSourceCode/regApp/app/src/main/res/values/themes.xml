@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.RegApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+
+    </style>
+
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <style name="Theme.RegApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RegApp" parent="Base.Theme.RegApp" />
+    <style name="Theme.RegApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.RegApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/labelProfile"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:text="Profile"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Sex -->
+            <TextView
+                android:id="@+id/labelSex"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Sex:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelProfile" />
+
+            <TextView
+                android:id="@+id/userSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male/Female"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/labelSex"
+                app:layout_constraintTop_toTopOf="@id/labelSex" />
+
+            <!-- Age -->
+            <TextView
+                android:id="@+id/labelAge"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelSex" />
+
+            <TextView
+                android:id="@+id/userAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/labelAge"
+                app:layout_constraintTop_toTopOf="@id/labelAge" />
+
+            <!-- Height -->
+            <TextView
+                android:id="@+id/labelHeight"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Height:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelAge" />
+
+            <TextView
+                android:id="@+id/userHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Height"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/labelHeight"
+                app:layout_constraintTop_toTopOf="@id/labelHeight" />
+
+            <TextView
+                android:id="@+id/userHeightUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(cm)"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/userHeight"
+                app:layout_constraintTop_toTopOf="@id/labelHeight" />
+
+            <!-- Weight -->
+            <TextView
+                android:id="@+id/labelWeight"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Weight:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelHeight" />
+
+            <TextView
+                android:id="@+id/userWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Weight"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@id/labelWeight"
+                app:layout_constraintTop_toTopOf="@id/labelWeight" />
+
+            <TextView
+                android:id="@+id/userWeightUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(kg)"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/userWeight"
+                app:layout_constraintTop_toTopOf="@id/labelWeight" />
+            <!-- Rest of the Weight TextViews -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEditProfile"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:text="Edit"
+                android:textSize="14sp"
+                android:background="@drawable/primary_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/trainingHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Your Trainings:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileCardView"
+       />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+        app:layout_constraintTop_toBottomOf="@id/trainingHeader"
+        app:layout_constraintBottom_toTopOf="@id/addTrainingButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Empty message view -->
+    <TextView
+        android:id="@+id/emptyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="No Training Data available ☹️ ️"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22sp"
+
+        android:visibility="gone"
+
+        app:layout_constraintTop_toBottomOf="@id/trainingHeader"
+        app:layout_constraintBottom_toTopOf="@id/addTrainingButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Your existing 'Add Training' button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addTrainingButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+
+        android:background="@drawable/primary_button"
+        android:text="➕ Add Training"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

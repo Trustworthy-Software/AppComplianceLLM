@@ -1,0 +1,84 @@
+<!-- cardview_content_layout.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Left side TextViews -->
+        <TextView
+            android:id="@+id/textTrainingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Date"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textTrainingDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Duration"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/textTrainingDate"
+            app:layout_constraintTop_toTopOf="@id/textTrainingDate"/>
+
+        <TextView
+            android:id="@+id/labelIntensity"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+
+            android:text="Intensity:"
+            android:textSize="14sp"
+
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTrainingDuration"/>
+
+        <TextView
+            android:id="@+id/labelLocation"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+
+            android:text="Location:"
+            android:textSize="14sp"
+
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelIntensity"/>
+
+
+        <TextView
+            android:id="@+id/textTrainingIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Intensity"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/labelIntensity"
+            app:layout_constraintTop_toTopOf="@id/labelIntensity"/>
+
+        <TextView
+            android:id="@+id/textTrainingLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Location"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/labelLocation"
+            app:layout_constraintTop_toTopOf="@id/labelLocation"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegistrationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/registrationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Registration Form"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeader" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+            <!-- Password Check -->
+            <EditText
+                android:id="@+id/editTextCheckPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Re-enter Password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+
+                android:layout_marginTop="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCheckPassword" />
+
+            <!-- Surname -->
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Surname"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+            <!-- Birth Date -->
+            <!-- Birth Date -->
+            <EditText
+                android:id="@+id/editTextBirthDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Birth Date"
+                android:focusable="false"
+                android:onClick="showDatePicker"
+                android:inputType="none"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
+
+
+            <!-- Sex -->
+            <TextView
+                android:id="@+id/textViewSexLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Sex: "
+                android:textSize="18sp"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextBirthDate" />
+
+            <Spinner
+                android:id="@+id/spinnerSex"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/sex_options"
+                android:textSize="18sp"
+
+                android:layout_marginStart="24dp"
+
+                app:layout_constraintStart_toEndOf="@id/textViewSexLabel"
+                app:layout_constraintTop_toTopOf="@id/textViewSexLabel"
+                app:layout_constraintBottom_toBottomOf="@id/textViewSexLabel" />
+
+            <!-- Height -->
+            <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Height"
+                android:inputType="number"
+                android:textSize="18sp"
+
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toStartOf="@id/userHeightUnit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerSex" />
+
+            <TextView
+                android:id="@+id/userHeightUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="(cm)"
+                android:textSize="18sp"
+
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/editTextHeight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextHeight"
+                app:layout_constraintBottom_toBottomOf="@id/editTextHeight"/>
+            <!-- Weight -->
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:hint="Weight"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+
+                app:layout_constraintEnd_toStartOf="@id/userWeightUnit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+            <TextView
+                android:id="@+id/userWeightUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="(kg)"
+                android:textSize="18sp"
+
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/editTextWeight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextWeight"
+                app:layout_constraintBottom_toBottomOf="@id/editTextWeight"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Submit Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubmit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+
+        android:background="@drawable/primary_button"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registrationCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

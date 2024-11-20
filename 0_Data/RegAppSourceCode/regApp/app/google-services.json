@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21166294238",
+    "project_id": "regapp-9aca4",
+    "storage_bucket": "regapp-9aca4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21166294238:android:27c9066646acd49c8cae4f",
+        "android_client_info": {
+          "package_name": "lu.snt.trux.regapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB18p-gRG6oqFZVpwXnIWVgL-PCTcJcTiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

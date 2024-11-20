@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/textTrainingDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/textTrainingDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Duration" android:layout_marginStart="8.0dip" app:layout_constraintStart_toEndOf="@id/textTrainingDate" app:layout_constraintTop_toTopOf="@id/textTrainingDate" />
+        <TextView android:textSize="14.0sp" android:id="@id/labelIntensity" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Intensity:" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textTrainingDuration" />
+        <TextView android:textSize="14.0sp" android:id="@id/labelLocation" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Location:" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/labelIntensity" />
+        <TextView android:textSize="14.0sp" android:id="@id/textTrainingIntensity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User Intensity" app:layout_constraintStart_toEndOf="@id/labelIntensity" app:layout_constraintTop_toTopOf="@id/labelIntensity" />
+        <TextView android:textSize="14.0sp" android:id="@id/textTrainingLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User Location" app:layout_constraintStart_toEndOf="@id/labelLocation" app:layout_constraintTop_toTopOf="@id/labelLocation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
