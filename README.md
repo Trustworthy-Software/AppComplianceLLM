@@ -1,6 +1,6 @@
 <div align="center"> <h1>Android App Compliance with LLMs</h1> </div>
 
-In this repository, we host all the data and code related to our paper titled "LLM-Based Compliance Checking of Android Apps".
+In this repository, we host all the data and code related to our paper titled "Toward LLM-Driven GDPR Compliance Checking for Android Apps".
 
 ### 🗂️ Repository Organization
 
@@ -8,7 +8,7 @@ The repository is organized into several key directories, each serving a specifi
 
 * **📁 0_Data**  
 
-  This directory contains all the data related to our experiments such as the entire source code of our demo application i.e., RegApp and the corresponding APK file, and the results of our analysis.
+  This directory contains all the data related to our experiments such as the entire source code of our demo application i.e., RegApp, the  APK files (RegApp and WordPress), and the results of our analysis.
 
 * **📂 1_Code**  
   Contains all the code relative to our approach. There is one main Jupyter Notebooks to facilitate execution that can be used to run experiments as well as supplementary code needed to execute the notebook.
@@ -80,9 +80,9 @@ Once these steps are complete, your environment will be set up with all the nece
 
 The provided Jupyter Notebook facilitates the execution of our approach. 
 
-The main notebook is **`regAppExperiments.ipynb`**. 
+The main notebook is **`Experiments.ipynb`**. 
 
-It processes the **`regApp.apk`** in three phases as described in the paper:
+It processes the **`regApp.apk`** or **`wordPress.apk`**  in three phases as described in the paper:
 
 1. **Decompiling APK.**
 2. **Preprocessing.**
