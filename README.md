@@ -2,6 +2,10 @@
 
 In this repository, we host all the data and code related to our paper titled "Toward LLM-Driven GDPR Compliance Checking for Android Apps".
 
+# 📜 Abstract
+
+>Android apps extensively collect sensitive personal data from our devices daily. Despite stringent regulations like the European Union's General Data Protection Regulation (GDPR), many applications (apps) fail to comply with these legal requirements. While previous studies have focused on the compliance of privacy policies, checking how these policies are implemented in the actual code has not yet been extensively investigated. Moreover, previous efforts have often been limited in scope. This paper explores the potential of Large Language Models (LLMs) to address the challenge of verifying privacy regulation compliance in Android apps. Specifically, we address scenarios where source code is unavailable by investigating whether LLM can work with Smali code—a human-readable representation of Android bytecode extracted from APK files. Through this exploratory investigation, we aim to uncover if LLMs can bridge the gap between legal privacy requirements and their technical implementation in mobile apps. Through initial experiments, we assess the feasibility and effectiveness of a straightforward LLM-driven method for identifying compliance issues and provide directions for our future research efforts to improve our approach and perform large-scale experiments.
+
 This is the prompt we used for our experiments:
 
 ### 🔍 Prompt Used in Experiments
