@@ -107,3 +107,6 @@ It processes the **`regApp.apk`** or **`wordPress.apk`**  in three phases as des
 3. **LLM Inference.**
 
 The results are saved to a `.json` file for further analysis.
+
+#### License
+This dataset is licensed under a Creative Commons Attribution 4.0 International License.
