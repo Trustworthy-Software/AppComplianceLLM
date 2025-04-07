@@ -2,6 +2,24 @@
 
 In this repository, we host all the data and code related to our paper titled "Toward LLM-Driven GDPR Compliance Checking for Android Apps".
 
+This is the prompt we used for our experiments:
+
+### 🔍 Prompt Used in Experiments
+<div align="left">
+<pre>
+You are an expert in Android app security, with a focus on Smali code analysis.
+You have to analyze a Smali method extracted from an APK.
+Your objective is to determine if this method [SPECIFIC REQUEST DEPENDING ON THE REQUIREMENT].
+
+Answer only YES/NO and provide a brief explanation.
+Answer YES if there is indisputable evidence that the method is designed for this purpose.
+Answer NO if such evidence is absent.
+
+Here is the Smali code to analyze:
+[SMALI CODE OF THE METHOD]
+</pre>
+</div>
+
 ### 🗂️ Repository Organization
 
 The repository is organized into several key directories, each serving a specific purpose:
