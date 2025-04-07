@@ -1,6 +1,13 @@
-<div align="center"> <h1>Android App Compliance with LLMs</h1> </div>
+<div align="center"> 
+  
+  <h1>Android App Compliance with LLMs</h1> 
 
-In this repository, we host all the data and code related to our paper titled "Toward LLM-Driven GDPR Compliance Checking for Android Apps".
+  <p align="center"> Avilaible on Zenodo: </p>
+  
+  [![DOI](https://zenodo.org/badge/669074668.svg)](https://zenodo.org/doi/10.5281/zenodo.15168295)
+  
+  <p align="center"> In this repository, we host all the data and code related to our paper titled "Toward LLM-Driven GDPR Compliance Checking for Android Apps". </p>
+</div>
 
 # 📜 Abstract
 
